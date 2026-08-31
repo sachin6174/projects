@@ -1,0 +1,70 @@
+# ==========================================
+# 🍎 macOS System Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+Icon
+
+
+# ==========================================
+# 🔨 Xcode & iOS Development
+# ==========================================
+## User-specific settings & states
+*.xcuserdata/
+xcuserdata/
+*.xcscmblueprint
+*.xcuserstate
+
+## Build artifacts & Intermediate files
+build/
+DerivedData/
+*.moved-aside
+*.xccheckout
+*.xcbkptlist
+
+## Compiled UI & Bundles
+*.nib
+*.storyboardc
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.app
+
+# ==========================================
+# 📦 Swift Package Manager
+# ==========================================
+.build/
+Packages/
+Package.pins
+.swiftpm/xcode/xcuserdata/
+
+# ==========================================
+# 🍫 Dependency Managers (CocoaPods & Carthage)
+# ==========================================
+Pods/
+Pods.xcodeproj/
+Carthage/Build/
+
+# ==========================================
+# 🚀 Fastlane & Testing
+# ==========================================
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# ==========================================
+# 💻 Code Editors & Temporary Files
+# ==========================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
