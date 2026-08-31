@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A8B16617B6E92B272A68FD6 /* CoreDataStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33831969C4A130FA32045322 /* CoreDataStorageService.swift */; };
+		19CA11177A08BB7371BD7CEC /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B4FFC8BE47F3CB0AFFB91 /* NoteListViewModel.swift */; };
+		1B86C23CF109ED113FB0C78E /* NetworkEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE74CEAB6A3AA43259219F1 /* NetworkEndpoint.swift */; };
+		204DECE41F4FCB73D7F5FE65 /* SyncHubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CEB2CF210685E5D30FA71 /* SyncHubViewModel.swift */; };
+		22554977F29C5FC735AA61DE /* SyncedNoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600658F4C809DE07CCF73F9 /* SyncedNoteListViewModel.swift */; };
+		38E428D32A82281B3C365730 /* NoteEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A356E76553E7DE37F94C5D /* NoteEditorViewModel.swift */; };
+		38FEF95625C9A76264C6B6C2 /* SyncedNoteEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0A7A58DAE29B876F681D10 /* SyncedNoteEditorView.swift */; };
+		3CE59CA8F0D678A979BCF822 /* SyncHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE414BC58180F451F02F2A1D /* SyncHubView.swift */; };
+		49BE44AEAFDA3E2293C079B2 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C168AD80BF4C2089B44F75C /* MainTabView.swift */; };
+		52C9D76093A26B151D387E0D /* NoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D9939AC71ABE6991AC84536 /* NoteModel.xcdatamodeld */; };
+		536036DF7EF038B227B6C0F9 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F347301CB2E9DB0EC64BA5 /* NoteModel.swift */; };
+		708B5FFA381B2760DD02248D /* NoteDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32684B5EEED5254BB484323 /* NoteDTO.swift */; };
+		721F104485CDCFEE04D71FD1 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4100A7B2E78598714E505B /* NetworkServiceProtocol.swift */; };
+		82715D4E47D831F10815723E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C454E48FAFD057F3406E33F /* NetworkError.swift */; };
+		87A6A21818D6602276EE9855 /* SyncStatusBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC9EAC2895C6BDE2C2FECF1 /* SyncStatusBadgeView.swift */; };
+		9BFF474BB50B5DCE38E07AB3 /* SyncEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6BB6437E34409EC58D275 /* SyncEngine.swift */; };
+		A416C2BE315BBA38BF1E3EB3 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A77AFA6D0627B177A53AB /* MockNetworkService.swift */; };
+		C48B10837DBB6F586E919BF7 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53018EC8BDAC440AD086759 /* NetworkMonitor.swift */; };
+		C78FC279BEAD0F4978F82386 /* NoteEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D84467395C4A6E3607D74F3 /* NoteEditorView.swift */; };
+		CC0A591AAFB99626B58A7CDA /* NoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983CAB6EDEB2E25073722288 /* NoteListView.swift */; };
+		CF8B0FD0AFC139A26529944E /* ZephyrNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982025CBE8F93B0BA1919A13 /* ZephyrNotesApp.swift */; };
+		DBB48C6B52F015BCAA9ED8D0 /* URLSessionNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406F74B9D7A1D7A105CB0C7 /* URLSessionNetworkService.swift */; };
+		E78A4A3557B87F4E79E1FAB2 /* NoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F6B2582DF672CBD1CCB8F /* NoteRepository.swift */; };
+		F29D13A373C0095C45AC5B5E /* SyncedNoteEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B490766047DCC19584D7F /* SyncedNoteEditorViewModel.swift */; };
+		F7566262623EF6B3D6769654 /* SyncedNoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C6642F2738465D8608074E /* SyncedNoteListView.swift */; };
+		F84125F70003B988F414006A /* NoteRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95F6D72B57394037396C0BA /* NoteRepositoryProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1600658F4C809DE07CCF73F9 /* SyncedNoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncedNoteListViewModel.swift; sourceTree = "<group>"; };
+		1C454E48FAFD057F3406E33F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		1F0A7A58DAE29B876F681D10 /* SyncedNoteEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncedNoteEditorView.swift; sourceTree = "<group>"; };
+		1F2A77AFA6D0627B177A53AB /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		2A5F6B2582DF672CBD1CCB8F /* NoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRepository.swift; sourceTree = "<group>"; };
+		2CD6BB6437E34409EC58D275 /* SyncEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncEngine.swift; sourceTree = "<group>"; };
+		33831969C4A130FA32045322 /* CoreDataStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorageService.swift; sourceTree = "<group>"; };
+		34F347301CB2E9DB0EC64BA5 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		4406F74B9D7A1D7A105CB0C7 /* URLSessionNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkService.swift; sourceTree = "<group>"; };
+		77C6642F2738465D8608074E /* SyncedNoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncedNoteListView.swift; sourceTree = "<group>"; };
+		7C168AD80BF4C2089B44F75C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		7D84467395C4A6E3607D74F3 /* NoteEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditorView.swift; sourceTree = "<group>"; };
+		8AE74CEAB6A3AA43259219F1 /* NetworkEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEndpoint.swift; sourceTree = "<group>"; };
+		982025CBE8F93B0BA1919A13 /* ZephyrNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZephyrNotesApp.swift; sourceTree = "<group>"; };
+		983CAB6EDEB2E25073722288 /* NoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListView.swift; sourceTree = "<group>"; };
+		A49CEB2CF210685E5D30FA71 /* SyncHubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncHubViewModel.swift; sourceTree = "<group>"; };
+		A6A356E76553E7DE37F94C5D /* NoteEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditorViewModel.swift; sourceTree = "<group>"; };
+		AF1C31C6F5493D475D0030BB /* ZephyrNotesApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ZephyrNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32684B5EEED5254BB484323 /* NoteDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDTO.swift; sourceTree = "<group>"; };
+		CDBA41DBC006EFA0E03A7447 /* NoteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteModel.xcdatamodel; sourceTree = "<group>"; };
+		D95F6D72B57394037396C0BA /* NoteRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRepositoryProtocol.swift; sourceTree = "<group>"; };
+		DCC9EAC2895C6BDE2C2FECF1 /* SyncStatusBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStatusBadgeView.swift; sourceTree = "<group>"; };
+		DE9B490766047DCC19584D7F /* SyncedNoteEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncedNoteEditorViewModel.swift; sourceTree = "<group>"; };
+		E53018EC8BDAC440AD086759 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		E81B4FFC8BE47F3CB0AFFB91 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
+		EC4100A7B2E78598714E505B /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		EE414BC58180F451F02F2A1D /* SyncHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncHubView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0A90C8A86E89E5B679C04526 /* Sync */ = {
+			isa = PBXGroup;
+			children = (
+				E53018EC8BDAC440AD086759 /* NetworkMonitor.swift */,
+				2CD6BB6437E34409EC58D275 /* SyncEngine.swift */,
+			);
+			path = Sync;
+			sourceTree = "<group>";
+		};
+		14A1A625A96148DA40DC3685 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				982025CBE8F93B0BA1919A13 /* ZephyrNotesApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3CFF3EFCF8E2361FFF7FF1C0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F6B2582DF672CBD1CCB8F /* NoteRepository.swift */,
+				D95F6D72B57394037396C0BA /* NoteRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		46654C12E7FBD24A456F2ACA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C32684B5EEED5254BB484323 /* NoteDTO.swift */,
+				34F347301CB2E9DB0EC64BA5 /* NoteModel.swift */,
+				5D9939AC71ABE6991AC84536 /* NoteModel.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		474B9D69426C5C60DC39D047 /* SyncHub */ = {
+			isa = PBXGroup;
+			children = (
+				EE414BC58180F451F02F2A1D /* SyncHubView.swift */,
+			);
+			path = SyncHub;
+			sourceTree = "<group>";
+		};
+		54F140D475686F19D8ECB1CA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A6A356E76553E7DE37F94C5D /* NoteEditorViewModel.swift */,
+				E81B4FFC8BE47F3CB0AFFB91 /* NoteListViewModel.swift */,
+				DE9B490766047DCC19584D7F /* SyncedNoteEditorViewModel.swift */,
+				1600658F4C809DE07CCF73F9 /* SyncedNoteListViewModel.swift */,
+				A49CEB2CF210685E5D30FA71 /* SyncHubViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9D060CABFCA77F2EBAC9885D = {
+			isa = PBXGroup;
+			children = (
+				E2D897DD60F55EC403521C42 /* ZephyrNotesApp */,
+				C94B65492849FE4736749CE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B23EAE118E399921C116D534 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C168AD80BF4C2089B44F75C /* MainTabView.swift */,
+				F7564742333800D2F6A6C210 /* LocalNotes */,
+				BAF2D68D8E5BFD0884D21905 /* SyncedNotes */,
+				474B9D69426C5C60DC39D047 /* SyncHub */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BAF2D68D8E5BFD0884D21905 /* SyncedNotes */ = {
+			isa = PBXGroup;
+			children = (
+				1F0A7A58DAE29B876F681D10 /* SyncedNoteEditorView.swift */,
+				77C6642F2738465D8608074E /* SyncedNoteListView.swift */,
+				DCC9EAC2895C6BDE2C2FECF1 /* SyncStatusBadgeView.swift */,
+			);
+			path = SyncedNotes;
+			sourceTree = "<group>";
+		};
+		C94B65492849FE4736749CE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF1C31C6F5493D475D0030BB /* ZephyrNotesApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2D897DD60F55EC403521C42 /* ZephyrNotesApp */ = {
+			isa = PBXGroup;
+			children = (
+				14A1A625A96148DA40DC3685 /* App */,
+				46654C12E7FBD24A456F2ACA /* Models */,
+				FB2B50E3BBD5006F2A376B1E /* Services */,
+				54F140D475686F19D8ECB1CA /* ViewModels */,
+				B23EAE118E399921C116D534 /* Views */,
+			);
+			path = ZephyrNotesApp;
+			sourceTree = "<group>";
+		};
+		F7564742333800D2F6A6C210 /* LocalNotes */ = {
+			isa = PBXGroup;
+			children = (
+				7D84467395C4A6E3607D74F3 /* NoteEditorView.swift */,
+				983CAB6EDEB2E25073722288 /* NoteListView.swift */,
+			);
+			path = LocalNotes;
+			sourceTree = "<group>";
+		};
+		F79C06A221226E480E3F3EB2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1F2A77AFA6D0627B177A53AB /* MockNetworkService.swift */,
+				8AE74CEAB6A3AA43259219F1 /* NetworkEndpoint.swift */,
+				1C454E48FAFD057F3406E33F /* NetworkError.swift */,
+				EC4100A7B2E78598714E505B /* NetworkServiceProtocol.swift */,
+				4406F74B9D7A1D7A105CB0C7 /* URLSessionNetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FB2B50E3BBD5006F2A376B1E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				33831969C4A130FA32045322 /* CoreDataStorageService.swift */,
+				F79C06A221226E480E3F3EB2 /* Network */,
+				3CFF3EFCF8E2361FFF7FF1C0 /* Repository */,
+				0A90C8A86E89E5B679C04526 /* Sync */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C35804AC09A146250A46E8BD /* ZephyrNotesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E3BBF4062F7D2279544DEAC /* Build configuration list for PBXNativeTarget "ZephyrNotesApp" */;
+			buildPhases = (
+				75D9CF6C704C96E666F7213F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZephyrNotesApp;
+			packageProductDependencies = (
+			);
+			productName = ZephyrNotesApp;
+			productReference = AF1C31C6F5493D475D0030BB /* ZephyrNotesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFB30597B3953A62F237B383 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = D7C95B76BB383A3E5B564DFA /* Build configuration list for PBXProject "ZephyrNotesApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9D060CABFCA77F2EBAC9885D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C94B65492849FE4736749CE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C35804AC09A146250A46E8BD /* ZephyrNotesApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75D9CF6C704C96E666F7213F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8B16617B6E92B272A68FD6 /* CoreDataStorageService.swift in Sources */,
+				49BE44AEAFDA3E2293C079B2 /* MainTabView.swift in Sources */,
+				A416C2BE315BBA38BF1E3EB3 /* MockNetworkService.swift in Sources */,
+				1B86C23CF109ED113FB0C78E /* NetworkEndpoint.swift in Sources */,
+				82715D4E47D831F10815723E /* NetworkError.swift in Sources */,
+				C48B10837DBB6F586E919BF7 /* NetworkMonitor.swift in Sources */,
+				721F104485CDCFEE04D71FD1 /* NetworkServiceProtocol.swift in Sources */,
+				708B5FFA381B2760DD02248D /* NoteDTO.swift in Sources */,
+				C78FC279BEAD0F4978F82386 /* NoteEditorView.swift in Sources */,
+				38E428D32A82281B3C365730 /* NoteEditorViewModel.swift in Sources */,
+				CC0A591AAFB99626B58A7CDA /* NoteListView.swift in Sources */,
+				19CA11177A08BB7371BD7CEC /* NoteListViewModel.swift in Sources */,
+				536036DF7EF038B227B6C0F9 /* NoteModel.swift in Sources */,
+				52C9D76093A26B151D387E0D /* NoteModel.xcdatamodeld in Sources */,
+				E78A4A3557B87F4E79E1FAB2 /* NoteRepository.swift in Sources */,
+				F84125F70003B988F414006A /* NoteRepositoryProtocol.swift in Sources */,
+				9BFF474BB50B5DCE38E07AB3 /* SyncEngine.swift in Sources */,
+				3CE59CA8F0D678A979BCF822 /* SyncHubView.swift in Sources */,
+				204DECE41F4FCB73D7F5FE65 /* SyncHubViewModel.swift in Sources */,
+				87A6A21818D6602276EE9855 /* SyncStatusBadgeView.swift in Sources */,
+				38FEF95625C9A76264C6B6C2 /* SyncedNoteEditorView.swift in Sources */,
+				F29D13A373C0095C45AC5B5E /* SyncedNoteEditorViewModel.swift in Sources */,
+				F7566262623EF6B3D6769654 /* SyncedNoteListView.swift in Sources */,
+				22554977F29C5FC735AA61DE /* SyncedNoteListViewModel.swift in Sources */,
+				DBB48C6B52F015BCAA9ED8D0 /* URLSessionNetworkService.swift in Sources */,
+				CF8B0FD0AFC139A26529944E /* ZephyrNotesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01D596ADD283ECD5C0180773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		199B7422C1D1E3059197477D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ZephyrNotesApp;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C69347750B48AD1D337C56D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		D877F3EE2ACF5312DEC86B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ZephyrNotesApp;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E3BBF4062F7D2279544DEAC /* Build configuration list for PBXNativeTarget "ZephyrNotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D877F3EE2ACF5312DEC86B9D /* Debug */,
+				199B7422C1D1E3059197477D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7C95B76BB383A3E5B564DFA /* Build configuration list for PBXProject "ZephyrNotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D596ADD283ECD5C0180773 /* Debug */,
+				8C69347750B48AD1D337C56D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5D9939AC71ABE6991AC84536 /* NoteModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CDBA41DBC006EFA0E03A7447 /* NoteModel.xcdatamodel */,
+			);
+			currentVersion = CDBA41DBC006EFA0E03A7447 /* NoteModel.xcdatamodel */;
+			path = NoteModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CFB30597B3953A62F237B383 /* Project object */;
+}
